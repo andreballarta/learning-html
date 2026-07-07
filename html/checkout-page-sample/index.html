@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+<h1>Checkout</h1>
+<section>
+    <h2>Your Cart</h2>
+    <img src="https://www.talkbass.com/attachments/upload_2021-7-11_8-38-29-png.4331079/" height="400" alt="Dingwall NG3 Bass">
+    <p><b>[x1]</b> Dingwall NG3 5-String in Black Forest Green</p>
+    <p><b>+ FREE</b> International Shipping</p>
+</section>
+<section>
+    <h2>Payment Information</h2>
+    <form>
+        <label for="card-name">Cardholder Name: <span aria-hidden="true">*</span></label>
+        <input required type="text" id="card-name" name="card-name" placeholder="e.g. André Ballarta" size="24">
+        <br>
+        <label for="card-number">Card Number:<span aria-hidden="true">*</span></label>
+        <input required type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" aria-describedby="card-number-help" size="24">
+        <p id="card-number-help"><b>Note:</b> Please enter your 16-digit card number. Don't include spaces or dashes.</p>
+        <br>
+        <label for="card-email">Email:<span aria-hidden="true">*</span></label>
+        <input required type="email" id="card-email" name="card-email" placeholder="e.g. example@email.com" size="24">
+        <br>
+        <label for="card-date">Expiry Date:<span aria-hidden="true">*</span></label>
+        <input required type="month" id="card-date" name="card-date">
+        <br>
+        <label for="card-cvv">CVV:<span aria-hidden="true">*</span></label>
+        <input required type="text" id="card-cvv" name="card-cvv" placeholder="XXX" maxlength="3" inputmode="numeric" pattern="[0-9]*">
+    </form>
+</section>
+<footer>
+    <p>* These fields are mandatory</p>
+</footer>
+</body>
+</html>
